@@ -1,0 +1,47 @@
+.img{
+  width: 100%;
+  height: 100%;
+}
+image{
+  margin: 5rpx;
+  width: 216rpx;
+  height: 320rpx;
+  border-radius: 10px;
+}
+.movie_navi{
+  width: 100%;
+  height: 330rpx;
+  border: solid 1px gray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+.movie_info{
+  margin-left: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.m_name{
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+
+.swiper-tab{
+    width: 100%;
+    text-align: center;
+    line-height: 80rpx;}
+.swiper-tab-list{  font-size: 30rpx;
+    display: inline-block;
+    width: 33.33%;
+    color: #777777;
+}
+.on{ color: blue;
+    border-bottom: 3rpx solid blue;}
+
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }
+.swiper-box view{
+    text-align: center;
+}

@@ -1,0 +1,36 @@
+<!--pages/detail/detail.wxml-->
+<view class="body">
+  <view class="bg" style="opacity:{{1}}">
+  <image src="../../imgs/{{filmImg}}.jpg" class="bgimg"></image>
+  </view>
+  <view class="m_detail">
+    <view class="detail_top">
+      <view class="movie_navi">
+    <image class="m_img" src="../../imgs/{{filmImg}}.jpg"></image>
+    <view class="movie_info">
+      <text class="m_name">{{film.filmName}}</text>
+      <text class="m_type">{{film.filmType}}</text>
+      <text class="m_star">主演：{{film.filmActors}}</text>
+      <text class="m_time">时长：{{film.filmDuration}}分钟</text>
+    </view>
+  </view>
+    </view>
+    <view class="detail_mid">
+      <text class="introduce">影片简介</text>
+      <scroll-view class="m_text" scroll-y="true">
+        <text>{{film.filmAbstract}}</text>
+      </scroll-view>
+      
+    </view>
+    <!-- <button>选座购票</button> -->
+    <view class="detail_bottom">
+      <view class="gobuy">选座购票</view>
+      <view class="show_time">
+        <block wx:for="{{timeList}}" wx:key="this">
+          <text bindtap="toChosenSeat" data-time="{{item.time}}">{{item.time}}</text>
+        </block>
+        
+      </view>
+    </view>
+  </view>
+</view>

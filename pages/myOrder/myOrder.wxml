@@ -1,0 +1,25 @@
+<view class="container">
+    <scroll-view class="detail" scroll-y="true">
+      <block wx:for="{{orderList}}" wx:key="this">
+       <view class="card" data-orderId="{{item.orderId}}" bindtap="toOrderDetail">
+          <view class="body">
+          <view class="top">
+            <text class="order_time">下单时间：{{item.paytime}}</text>
+          </view>
+          <view class="mid">
+            <image src="../../imgs/{{item.movieId}}.jpg"></image>
+            <view class="info"> 
+              <text class="m_name">{{item.movieName}}</text>
+              <text class="infotext">{{item.playTime}}</text>
+              <text class="infotext">{{item.roomId}}号厅{{item.seatLocation}}</text>
+            </view>
+          </view>
+          <view class="bottom">
+            <text>总价：{{item.money}}</text>
+            <text>{{item.orderStatus}}</text>
+          </view>
+        </view>
+       </view> 
+      </block>
+    </scroll-view>  
+</view> 

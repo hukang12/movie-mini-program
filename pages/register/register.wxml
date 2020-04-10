@@ -1,0 +1,31 @@
+<view class="bg">
+  <image class="bg_img" style="opacity:{{0.6}}" src="../../imgs/bg.jpg"></image>
+  <view class="app_logo">
+    <image src="../../imgs/logo.jpg"></image>
+    <text>恋人影咖</text>
+  </view>
+  <view class="login">
+    <form bindsubmit="formSubmit" class="form_login">
+      <view class="input">
+        <image src="../../imgs/account.png"></image>
+        <input type="text" name="userAccount" maxlength="11" placeholder="输入11位手机号" value="{{userAccount}}"></input>
+      </view>
+      <view class="input">
+        <image src="../../imgs/nick.png"></image>
+        <input type="text" name="nickName" placeholder="设置您的昵称" value="{{nickName}}"></input>
+      </view>
+      <view class="input">
+        <image src="../../imgs/pwd.png"></image>
+        <input password="true" name="userPassword" placeholder="设置登录密码" value="{{userPassword}}"></input>
+      </view>
+      <view class="input">
+        <image src="../../imgs/pay.png"></image>
+        <input password="true" name="payPassword" maxlength="6" placeholder="设置6位支付密码" value="{{payPassword}}"></input>  
+      </view>
+      
+      
+      
+      <button form-type="submit" class="btn_login">立即注册</button>
+    </form>
+  </view>
+</view>

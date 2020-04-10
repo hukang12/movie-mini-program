@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/my/my",
+    "pages/myOrder/myOrder",
+    "pages/orderDetail/orderDetail",
+    "pages/movie/movie",
+    "pages/test/test",
+    "pages/success/success",
+    
+    
+    "pages/seat/seat",
+    "pages/index/index",
+    "pages/findPwd/findPwd",
+    
+    "pages/register/register",
+    
+    
+    "pages/detail/detail",
+    
+    "pages/myInfo/myInfo"
+    
+  ],
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#e0620d",
+    "list": [
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "电影",
+        "iconPath": "/imgs/tabbar/movie_off.png",
+        "selectedIconPath": "/imgs/tabbar/movie_on.png",
+        "navigationBarTitleText": "电影主页"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/imgs/tabbar/account_off.png",
+        "selectedIconPath": "/imgs/tabbar/account_on.png",
+        "navigationBarTitleText": "我的主页"
+      }
+    ]
+  }
+}

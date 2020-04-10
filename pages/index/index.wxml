@@ -1,0 +1,24 @@
+<view class="bg">
+  <image class="bg_img" style="opacity:{{0.6}}" src="../../imgs/bg.jpg"></image>
+  <view class="app_logo">
+    <image src="../../imgs/logo.jpg"></image>
+    <text>恋人影咖</text>
+  </view>
+  <view class="login">
+    <form bindsubmit="formSubmit" class="form_login">
+      <view class="input">
+        <image src="../../imgs/account.png"></image>
+        <input type="text" name="userAccount" placeholder="用户名" value="{{userAccount}}"></input>
+      </view>
+      <view class="input">
+        <image src="../../imgs/pwd.png"></image>
+        <input password="true" name="userPassword" placeholder="密码" value="{{userPassword}}"></input> 
+      </view>
+      <button form-type="submit" class="btn_login">登录</button>
+    </form>
+    <view class="login_bottom">
+      <navigator class="navi" url="/pages/findPwd/findPwd">忘记密码</navigator>
+      <navigator class="navi" url="/pages/register/register">立即注册</navigator>
+    </view>
+  </view>
+</view>

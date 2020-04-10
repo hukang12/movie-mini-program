@@ -1,0 +1,53 @@
+<swiper indicator-dots autoplay interval="3000" circular easing-function="easeInOutCubic">
+    <swiper-item>
+      <image class="img" src="../../imgs/lunbo1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="img" src="../../imgs/lunbo2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="img" src="../../imgs/lunbo3.jpg"></image>
+    </swiper-item>
+  </swiper>
+
+<view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">今日上映</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">明日上映</view>
+</view>
+<!-- style="height:{{winHeight - 31}}px" -->
+<!-- <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+  <swiper-item> -->
+    <scroll-view scorll-y="true">
+      <block wx:for="{{filmList}}" wx:key="this">
+        <view bindtap="toDetail" data-filmId="{{item.filmId}}" class="movie_navi">
+          <image src="../../imgs/{{item.filmPoster}}.jpg"></image>
+          <view class="movie_info">
+            <text class="m_name">{{item.filmName}}</text>
+            <text class="m_type">{{item.filmType}}</text>
+            <text class="m_star">主演：{{item.filmActors}}</text>
+            <text class="m_time">时长：{{item.filmDuration}}分钟</text>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  <!-- </swiper-item>
+
+  <swiper-item>
+    <scroll-view>
+     <block wx:for="{{filmList}}" wx:key="this">
+       <navigator url="../detail/detail?filmId={{item.filmId}}" class="movie_navi">
+          <image src="../../imgs/{{item.filmPoster}}.jpg"></image>
+          <view class="movie_info">
+          <text class="m_name">{{item.filmName}}</text>
+          <text class="m_type">{{item.filmType}}</text>
+          <text class="m_star">主演：{{item.filmActors}}</text>
+          <text class="m_time">时长：{{item. filmDuration}}分钟</text>
+          </view>
+        </navigator>
+      </block>
+    </scroll-view>
+  </swiper-item>
+    
+</swiper> -->
+
+

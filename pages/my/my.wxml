@@ -1,0 +1,18 @@
+<image class="bg_img" style="opacity:{{1}}" src="../../imgs/bg.jpg"></image>
+<view class="info">
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  <block wx:else>
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </block>
+</view>
+<view class="vipInfo">{{vipInfo.nickname}}你好！</view>
+<view class="main">
+  <block wx:for="{{menu}}" wx:key="item">
+      <navigator url="/{{item.url}}" class="menu_item" hover-class="list-item_active">
+          <image class='item_image' src='../../imgs/{{item.icon}}'></image>
+          <text class="item_text">{{item.text}}</text>>
+      </navigator>
+  </block>
+</view>
+

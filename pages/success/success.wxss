@@ -1,0 +1,32 @@
+/* pages/success/success.wxss */
+page{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pay_result{
+  width: 350rpx;
+  height: 150rpx;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+.pay_result image{
+  width: 100rpx;height: 100rpx; border-radius: 50%;
+}
+.pay_result text{
+  font-size: 50rpx;
+  font-weight: bold;
+  
+}
+.btn_detail{
+  width: 80%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  background-color: orange;
+  border-radius: 25rpx;
+  margin-top: 50rpx;
+}

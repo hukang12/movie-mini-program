@@ -1,0 +1,3 @@
+<!--pages/myInfo/myInfo.wxml-->
+<text>个人信息</text>
+<view>修改登录密码</view>

@@ -1,0 +1,17 @@
+<view class="body">
+  <view class="top">
+    <text class="order_time">下单时间：2020年4月9日17:26:35</text>
+  </view>
+  <view class="mid">
+    <image src="../../imgs/bg.jpg"></image>
+    <view class="info"> 
+      <text class="m_name">电影名</text>
+      <text class="infotext">2020-01-01 12:20</text>
+      <text class="infotext">3排3座 3排4座 3排5座</text>
+    </view>
+  </view>
+  <view class="bottom">
+    <text>总价：38元</text>
+    <text>已完成</text>
+  </view>
+</view>

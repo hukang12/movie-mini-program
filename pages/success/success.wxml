@@ -1,0 +1,7 @@
+<!--pages/success/success.wxml-->
+<view class="pay_result">
+  <image src="../../imgs/pay_success.png"></image>
+  <text>支付成功</text>
+</view>
+<button class="btn_detail" bindtap="toDetail">查看订单详情</button>
+

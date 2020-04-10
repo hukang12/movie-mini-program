@@ -1,0 +1,56 @@
+<view class="body">
+  <view class="title">
+    <view>{{film}}</view>
+    <view class="m_info">
+      <text>今天04-06</text>
+      <text>{{time}}</text>
+      <text>国语（3D）</text>
+    </view>
+  </view>
+
+  <view class="zhujie">
+    <view><image src="/imgs/sit_admit.png"></image><text>:可选</text></view>
+    <view><image src="/imgs/sit_ban.png"></image><text>:不可选</text></view>
+    <view><image src="/imgs/sit_chosen.png"></image><text>:选中</text></view>
+  </view>
+  
+  <view class="seat">
+    <view class="screen">4号厅（3D）</view>
+    <block wx:for = "{{seatArr}}" wx:for-index="row_id" wx:for-item="row_seat" wx:key="this">
+      <view class="view_seat_location">
+        <block wx:for="{{row_seat}}" wx:for-index="col_id" wx:for-item="col_seat" wx:key="this">
+          <image class="seat_image" src="/imgs/{{col_seat.src}}" bindtap="seat_click" data-x="{{row_id}}" data-y="{{col_id}}" data-src="{{col_seat.src}}"></image>
+        </block>
+     </view> 
+   </block>
+</view>
+
+<view class="show_location">
+  <text>{{seatLoaction}}</text>
+  <view>￥{{fee}}</view>
+</view>
+
+<button catchtap='showInputLayer'>立即支付</button>
+
+<!-- 密码输入框 -->
+<view wx:if='{{showPayPwdInput}}'>
+    <view class='bg_layer'></view>
+    <view class='input_main'>
+        <view class='input_title'>
+            <view class='input_back' catchtap='hidePayLayer'><text></text></view>
+            <text>输入支付密码</text>
+        </view>
+        <view class='input_tip'><text>使用会员卡余额支付需要验证身份，验证通过后才可进行支付。</text></view>
+        <view class='input_row' catchtap='getFocus'>
+            <view class='pwd_item' wx:for='{{6}}' wx:key='item' wx:for-index='i'>
+                <text wx:if='{{pwdVal.length>i}}'></text>
+            </view>
+        </view>
+        <view class='forget_pwd' catchtap='hidePayLayer'>忘记密码</view>
+        <input class='input_control' password type='number' focus='{{payFocus}}' bindinput='inputPwd' maxlength='6'/>
+    </view>
+</view>
+</view>
+
+
+

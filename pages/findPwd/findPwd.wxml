@@ -1,0 +1,24 @@
+<view class="bg">
+  <image class="bg_img" style="opacity:{{0.6}}" src="../../imgs/bg.jpg"></image>
+  <view class="app_logo">
+    <image src="../../imgs/logo.jpg"></image>
+    <text>恋人影咖</text>
+  </view>
+  <view class="login">
+    <form bindsubmit="formSubmit" class="form_login">
+      <view class="input">
+        <image src="../../imgs/account.png"></image>
+        <input type="text" name="userAccount" placeholder="输入手机号" value="{{userAccount}}"></input>
+      </view>
+      <view class="input">
+        <image src="../../imgs/pwd.png"></image>
+        <input password="true" name="newPassword" placeholder="设置新密码" value="{{newPassword}}"></input>
+      </view>
+      <view class="input">
+        <image src="../../imgs/pwd.png"></image>
+        <input password="true" name="againPwd" placeholder="确认密码" value="{{againPwd}}"></input>
+      </view>
+      <button form-type="submit" class="btn_ok">确定</button>
+    </form>
+  </view>
+</view>
