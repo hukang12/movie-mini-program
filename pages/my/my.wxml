@@ -6,7 +6,7 @@
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </block>
 </view>
-<view class="vipInfo">{{vipInfo.nickname}}你好！</view>
+<view class="vipInfo">{{vipInfo.nickname}}</view>
 <view class="main">
   <block wx:for="{{menu}}" wx:key="item">
       <navigator url="/{{item.url}}" class="menu_item" hover-class="list-item_active">

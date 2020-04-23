@@ -19,5 +19,5 @@
     <text class="money">付款金额：￥{{order.money}}</text>
     <text>下单时间：{{paytime}}</text>
   </view>
-  <button>删除订单</button>
+  <button bindtap="deleteOrder">删除订单</button>
 </view>

@@ -1,3 +1,4 @@
+<!-- 修改完毕 -->
 <view class="bg">
   <image class="bg_img" style="opacity:{{0.6}}" src="../../imgs/bg.jpg"></image>
   <view class="app_logo">
